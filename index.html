@@ -1,0 +1,24 @@
+---
+layout: default
+title: index
+menuitem: 1
+---
+
+<div class="container">
+  <section class="well">
+    <h1>Libri</h1>
+    {% include lister.html type="book" %}
+  </section>
+  <section class="well">
+    <h1>Articoli</h1>
+    {% include lister.html type="paper" %}
+  </section>
+  <section class="well">
+    <h1>Appunti</h1>
+    {% include lister.html type="notes" %}
+  </section>
+  <section class="well">
+    <h1>Slide</h1>
+    {% include lister.html type="slide" %}
+  </section>
+</div>

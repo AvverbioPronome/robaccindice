@@ -1,0 +1,9 @@
+<nav class="well">
+  <ul class="sidebar-nav">{% for p in site.pages %}{% if p.menuitem %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a>{% if p.children %}
+      <ul>{% for c in p.children %}
+        <li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}
+      </ul>{% endif %}
+    </li>{% endif %}{% endfor %}
+  </ul>
+</nav>

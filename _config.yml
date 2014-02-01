@@ -1,0 +1,5 @@
+name: "Un indice di robaccia."
+markdown: redcarpet
+markdown_ext: md,text
+pygments: true
+lang: it

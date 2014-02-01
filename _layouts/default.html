@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <style type="text/css">
+          section h2:before {content: "— ";}
+        </style>
+
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <hgroup>
+            <h1>{{ site.name }}</h1>
+            <h2>{{ page.title }}</h2>
+          </hgroup>
+        </div>
+        <div class="col-sm-8"> 
+          {{ content }}
+        </div>
+        <div class="col-sm-4" id="sidebar">
+          {% include nav.html %}
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+- nome: "Feynman Lectures on Physics"
+  autori: ["Richard P. Feynman", "Tizio Leighton", "Mr. Sands"]
+  materie: [Fisica 1, Fisica 2, Meccanica Quantistica]
+  type: book
+  moar: 
+    note: "Questo libro è diviso in volumi."
+
+- nome: Caio
+  type: book
+  autori: [Curie, pippo]
+  materie: [Puppa]
+
+- nome: "Rabdomanzia Itinerante"
+  type: paper
+  autori: [Pinco Pallino]
+  materie: [Nessuna]
+  moar:
+    scemo: che sei

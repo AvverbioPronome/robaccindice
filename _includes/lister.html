@@ -1,0 +1,13 @@
+{% assign stuff = site.data.stuff | sort:"nome" %}
+{% for item in stuff %}
+  {% if include.type %}
+    {% if item.type == include.type %}
+      {% include item.html %}{% endif %}
+  {% elsif include.autore %}..
+    {% if item.autori contains include.autore %}
+      {% include item.html %}{% endif %}
+  {% elsif include.materia %}
+    {% if item.materie contains include.materia %}
+      {% include item.html %}{% endif %}
+  {% endif %}
+{% endfor %}

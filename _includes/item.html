@@ -1,0 +1,5 @@
+<h2 class="h-{{ include.type }}">{{ item.nome }}</h2>
+  <dl class="dl-horizontal">
+    <dt>Autore</dt><dd>{{ item.autori | array_to_sentence_string }}</dd>
+    <dt>Materie</dt><dd>{{ item.materie | array_to_sentence_string }}</dd>
+    {% if item.moar %}{% for field in item.moar %}<dt>{{ field[0] | capitalize }}</dt><dd>{{ field[1] }}</dd>{% endfor %}{% endif %}</dl>
